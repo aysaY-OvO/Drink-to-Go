@@ -1,6 +1,6 @@
 const navMain = document.querySelector('.main-nav'),
   navToggler = document.querySelector('.main-nav__toggle'),
-  catalogRange = document.getElementById('price__range'),
+  catalogRange = document.getElementById('price-range'),
   minPriceInput = document.querySelector('.price__min-price'),
   maxPriceInput = document.querySelector('.price__max-price'),
   paginationItems = document.querySelectorAll('.pagination__list-item'),

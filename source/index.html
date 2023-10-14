@@ -15,7 +15,7 @@
 
 <body class="page__body">
   <header class="header">
-    <a href="#" class="header__logo">
+    <a class="header__logo" href="#">
       <picture class="header__logo-image logo-image">
         <source media="(min-width: 1440px)" srcset="images/logo-long.svg">
         <source media="(min-width: 768px)" srcset="images/logo-short.svg">
@@ -222,7 +222,7 @@
             <div class="catalog__form-wrapper">
               <fieldset class="catalog__fieldset catalog__price price">
                 <legend class="catalog__legend">Цена</legend>
-                <div id="price__range"></div>
+                <div id="price-range"></div>
                 <div class="price__value">
                   <label class="visually-hidden" for="min-price">Минимальная Цена</label>
                   <input class="price__input price__min-price" type="number" id="min-price" name="min-price"
@@ -557,27 +557,27 @@
       </ul>
     </div>
     <address class="footer__contacts footer__block">
-      <span class="footer__subtitle footer__contacts-subtitle">Контакты</sp>
-        <ul class="footer__contacts-list">
-          <li class="footer__contacts-item footer__list-item">
-            <a class="footer__link footer__contacts-link" href="#">
-              <svg width="13" height="16">
-                <use class="footer__contacts-image" xlink:href="images/icons/stack.svg#address"></use>
-              </svg>
-              <span class="footer__address">Санкт-Петербург, <br class="tablet-width-only"> набережная <br
-                  class="mobile-width-only"> реки <br class="tablet-and-desktop-width"> Карповки, дом
-                5</span>
-            </a>
-          </li>
-          <li class="footer__contacts-item footer__list-item">
-            <a class="footer__link footer__contacts-link" href="tel:+7(999)999-99-99">
-              <svg width="13" height="16">
-                <use class="footer__contacts-image" xlink:href="images/icons/stack.svg#phone"></use>
-              </svg>
-              <span class="footer__address">+7 (999) 999-99-99</span>
-            </a>
-          </li>
-        </ul>
+      <span class="footer__subtitle footer__contacts-subtitle">Контакты</span>
+      <ul class="footer__contacts-list">
+        <li class="footer__contacts-item footer__list-item">
+          <a class="footer__link footer__contacts-link" href="#">
+            <svg width="13" height="16">
+              <use class="footer__contacts-image" xlink:href="images/icons/stack.svg#address"></use>
+            </svg>
+            <span class="footer__address">Санкт-Петербург, <br class="tablet-width-only"> набережная <br
+                class="mobile-width-only"> реки <br class="tablet-and-desktop-width"> Карповки, дом
+              5</span>
+          </a>
+        </li>
+        <li class="footer__contacts-item footer__list-item">
+          <a class="footer__link footer__contacts-link" href="tel:+7(999)999-99-99">
+            <svg width="13" height="16">
+              <use class="footer__contacts-image" xlink:href="images/icons/stack.svg#phone"></use>
+            </svg>
+            <span class="footer__address">+7 (999) 999-99-99</span>
+          </a>
+        </li>
+      </ul>
     </address>
     <div class="footer__copyright">
       <span class="footer__copyright-text">Разработано в</span>
