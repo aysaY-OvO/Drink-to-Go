@@ -33,8 +33,12 @@
     border-radius: 50%;
     background-color: $base-white;
     left: -50px;
-    top: -0.2px;
+    top: 0.2px;
     transition: left 0.1s;
+
+    @media (min-width: $tablet-width) {
+      top: -0.2px;
+    }
   }
 }
 
