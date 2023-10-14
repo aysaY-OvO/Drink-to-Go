@@ -3,14 +3,17 @@
   justify-content: space-between;
   width: 280px;
   margin: 0 auto;
+  margin-top: 20px;
 
   @media (min-width: $tablet-width) {
     width: 395px;
     margin-right: 65px;
+    margin-top: 40px;
   }
 
   @media (min-width: $desktop-width) {
     margin-right: 30px;
+    margin-top: 30px;
   }
 }
 

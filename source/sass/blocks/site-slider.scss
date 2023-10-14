@@ -30,6 +30,7 @@ swiper-container::part(button-next):disabled {
   padding-top: 20px;
   padding-bottom: 60px;
   box-sizing: border-box;
+  min-height: 656px;
 
   &--flat-white {
     background-color: $flat-white;
@@ -53,6 +54,7 @@ swiper-container::part(button-next):disabled {
     grid-template-rows: 1fr 1.5fr 1fr;
     justify-items: start;
     padding-bottom: 64px;
+    padding-right: 80px;
   }
 }
 
@@ -137,6 +139,7 @@ swiper-container::part(button-next):disabled {
   text-align: center;
   margin-bottom: 20px;
   box-sizing: border-box;
+  overflow-y: auto;
 
   &--tablet {
     display: none;
@@ -160,6 +163,7 @@ swiper-container::part(button-next):disabled {
     grid-row: 2;
     grid-column: 2;
     margin: 0;
+    max-height: 100px;
   }
 }
 

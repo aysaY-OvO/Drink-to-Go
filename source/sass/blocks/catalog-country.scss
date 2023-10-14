@@ -22,6 +22,8 @@
     border-radius: 12px;
     background-color: $base-grey;
     left: -52px;
+    top: 50%;
+    transform: translateY(-50%);
   }
 
   &::after {
@@ -33,7 +35,8 @@
     border-radius: 50%;
     background-color: $base-white;
     left: -50px;
-    top: -0.2px;
+    top: 50%;
+    transform: translateY(-50%);
     transition: left 0.1s;
   }
 }
