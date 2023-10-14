@@ -1,0 +1,125 @@
+.catalog__card {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding-top: 40px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  background-color: $base-white;
+  border-radius: 4px;
+  max-width: 280px;
+  height: 420px;
+
+  &:not(:last-of-type) {
+    margin-bottom: 20px;
+  }
+
+  &:last-of-type {
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: $tablet-width) {
+    max-width: 349px;
+    height: 435px;
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+
+    &:nth-of-type(odd) {
+      margin-right: 30px;
+    }
+
+    &:not(:last-of-type) {
+      margin-bottom: 30px;
+    }
+
+    &:last-of-type {
+      margin-bottom: 70px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 317px;
+    height: 460px;
+    margin: 0;
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+.catalog__link {
+  text-decoration: none;
+  cursor: pointer;
+  color: $base-black;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.card__image {
+  text-align: center;
+}
+
+.card__title {
+  margin: 0;
+  align-self: flex-start;
+  margin-top: 24px;
+  margin-bottom: 4px;
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 700;
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+
+.card__text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 16px;
+}
+
+.br-mobile-and-desktop-width {
+  @media (min-width: $tablet-width) and (max-width: calc($desktop-width - 1px)) {
+    display: none;
+  }
+}
+
+.card__order {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card__button {
+  border: none;
+  background-color: $base-primary;
+  color: $base-white;
+  width: 141px;
+  height: 36px;
+  border-radius: 4px;
+  font-family: "Montserrat", "Arial", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 20px;
+  padding-left: 20px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $primary-lighter;
+  }
+
+  &:active {
+    background-color: $primary-darker;
+  }
+
+  &:disabled {
+    background-color: $base-grey;
+  }
+}

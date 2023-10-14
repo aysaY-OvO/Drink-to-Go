@@ -1,0 +1,25 @@
+.logo-text {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    font-size: 12px;
+    line-height: 16px;
+    margin-left: 20px;
+    padding-top: 2px;
+    color: $base-black;
+  }
+}
+
+.logo-image {
+  width: 32px;
+  height: 36px;
+
+  @media (min-width: $tablet-width) {
+    width: 82px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 170px;
+  }
+}

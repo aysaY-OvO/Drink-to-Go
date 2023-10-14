@@ -1,0 +1,147 @@
+.catalog__wrapper {
+  padding: 50px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $lightest-grey;
+
+  @media (min-width: $desktop-width) {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 100px;
+    padding-bottom: 120px;
+    max-width: 1440px;
+    box-sizing: border-box;
+  }
+}
+
+.catalog__wrapper .catalog__title {
+  margin-bottom: 20px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 40px;
+  }
+}
+
+.catalog__content {
+  @media (min-width: $desktop-width) {
+    max-width: 1440px;
+    padding-right: 40px;
+    padding-left: 40px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.catalog__form {
+  margin-bottom: 36px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.catalog__form-wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 318px;
+    flex-direction: column;
+  }
+}
+
+.catalog__fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+
+  &:not(:last-of-type) {
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+
+    &:not(:last-of-type) {
+      margin-right: 30px;
+    }
+  }
+}
+
+.catalog__legend {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  padding-right: 26px;
+  padding-left: 0;
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.catalog__buttons {
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}
+
+.catalog__button {
+  width: 280px;
+  height: 40px;
+  border-radius: 4px;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $primary-lighter;
+  }
+
+  &:active {
+    background-color: $primary-darker;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 137px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 149px;
+  }
+}
+
+.catalog__button--submit {
+  background-color: $base-primary;
+  color: $base-white;
+  margin-bottom: 20px;
+
+  &:disabled {
+    background-color: $base-grey;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-right: 20px;
+  }
+}
+
+.catalog__button--reset {
+  background-color: $base-white;
+  color: $base-primary;
+
+  &:hover,
+  &:active,
+  &:disabled {
+    color: $base-white;
+  }
+
+  &:disabled {
+    background-color: $light-grey;
+  }
+}

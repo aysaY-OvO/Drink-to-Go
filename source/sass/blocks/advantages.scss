@@ -1,0 +1,114 @@
+.advantages {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 100px;
+  }
+}
+
+.advantages__title {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-shadow: none;
+    margin-bottom: 55px;
+  }
+}
+
+.advantages__list {
+  margin: 0 auto;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 36px;
+  padding-bottom: 60px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 30px;
+  }
+}
+
+.advantages__list-item {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  width: 280px;
+  margin: 0 auto;
+
+  &:not(:last-of-type) {
+    margin-bottom: 50px;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    align-items: start;
+    grid-template-columns: 50px auto;
+    grid-template-rows: 36px auto;
+    column-gap: 20px;
+    row-gap: 10px;
+    margin-bottom: 50px;
+    width: 339px;
+
+    &:nth-child(odd) {
+      margin-right: 30px;
+    }
+
+    & svg {
+      grid-column: 1;
+      grid-row: 1 / -1;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 318px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.advantages__subtitle {
+  margin-top: 10px;
+  margin-bottom: 4px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 32px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 36px;
+    margin: 0;
+  }
+}
+
+.advantages__text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
+  }
+}
+
+.advantages__text .br-tablet-width {
+  display: none;
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    display: block;
+  }
+}

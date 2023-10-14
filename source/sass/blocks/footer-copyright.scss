@@ -1,0 +1,29 @@
+.footer__copyright {
+  box-sizing: border-box;
+  padding: 20px 57px 30px;
+  display: flex;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    min-width: 768px;
+    justify-content: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+  }
+}
+
+.footer__copyright-text {
+  font-size: 12px;
+  line-height: 16px;
+  color: $base-grey;
+  margin-right: 3px;
+}
+
+.footer__copyright-link {
+  display: flex;
+  color: $base-grey;
+  align-items: center;
+  justify-content: space-between;
+}

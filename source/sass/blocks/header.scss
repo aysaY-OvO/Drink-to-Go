@@ -1,0 +1,32 @@
+.header {
+  background-color: $base-white;
+  width: 320px;
+  min-height: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    height: 80px;
+    padding-right: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+    padding-right: 40px;
+  }
+}
+
+.header__logo {
+  margin-top: 5px;
+  display: flex;
+  padding-left: 20px;
+  text-decoration: none;
+
+  @media (min-width: $desktop-width) {
+    margin-left: 20px;
+  }
+}
