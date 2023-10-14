@@ -36,8 +36,10 @@
 
 .catalog__form {
   margin-bottom: 36px;
+  max-width: 320px;
 
   @media (min-width: $tablet-width) {
+    max-width: none;
     display: flex;
     flex-direction: column;
     align-items: center;
