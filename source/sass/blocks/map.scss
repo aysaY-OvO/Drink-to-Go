@@ -2,6 +2,29 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-image: url("../../images/map-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../images/map-mobile@2x.jpg");
+  }
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../../images/map-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../images/map-tablet@2x.jpg");
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../../images/map-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../images/map-desktop@2x.jpg");
+    }
+  }
 }
 
 #map-canvas {
