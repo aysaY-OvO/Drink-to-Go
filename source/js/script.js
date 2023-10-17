@@ -4,7 +4,8 @@ const navMain = document.querySelector('.main-nav'),
   minPriceInput = document.querySelector('.price__min-price'),
   maxPriceInput = document.querySelector('.price__max-price'),
   paginationItems = document.querySelectorAll('.pagination__list-item'),
-  paginationControls = document.querySelectorAll('.pagination__control');
+  paginationControls = document.querySelectorAll('.pagination__control'),
+  siteMap = document.querySelector('.map');
 
 //Toggle Mobile Menu
 navMain.classList.remove('main-nav--nojs');
@@ -53,6 +54,7 @@ if (paginationItems[1].classList.contains('pagination__list-item--active')) {
 }
 
 //Map
+siteMap.classList.remove('map-nojs');
 const L = window.L;
 const map = L.map('map-canvas').setView({
   lat: 59.968516,

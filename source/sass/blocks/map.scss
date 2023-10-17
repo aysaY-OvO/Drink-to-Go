@@ -2,9 +2,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.map-nojs {
   background-image: url("../../images/map-mobile.jpg");
   background-repeat: no-repeat;
   background-size: contain;
+  background-position: 50% 50%;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../../images/map-mobile@2x.jpg");
